@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippet><entry><trigger id="Ruby">select</trigger><description>select element</description><template>select { |${element}| ${element}.${} }${cursor}</template></entry><entry><trigger id="Ruby">when</trigger><description>when</description><template>inject(${object}) do |${injection}, ${element}| 
+	${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">reject</trigger><description>reject element</description><template>reject { |${element}| ${element}.${} }${cursor}</template></entry><entry><trigger id="Ruby">:</trigger><description>hash pair</description><template>:${key} =&gt; ${&quot;value&quot;}${,}${cursor}</template></entry><entry><trigger id="Ruby">ife</trigger><description>if...else</description><template>if ${condition}
+	${statement_1}
+else
+	${statement_2}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">unless</trigger><description>unless</description><template>unless ${condition}
+	${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">do</trigger><description>do...end</description><template>do
+	${statement}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">each</trigger><description>each element</description><template>ch { |${element}| ${element}.${} }${cursor}</template></entry><entry><trigger id="Ruby">eachwi</trigger><description>each with index</description><template>each_with_index { |${element}, ${idx}| ${element}.$0 }${cursor}</template></entry><entry><trigger id="Ruby">inject</trigger><description>inject object</description><template>inject(${object}) { |${injection}, ${element}| ${} }${cursor}</template></entry><entry><trigger id="Ruby">case</trigger><description>case...end</description><template>case ${object}
+	when ${condition}
+		${statement}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">cls</trigger><description>class...end</description><template>class ${class_name}
+	${statement}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">forin</trigger><description>for...in...end</description><template>for ${element} in ${collection}
+	${element}.${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">rejecto</trigger><description>reject element do</description><template>reject do |${element}| 
+	${element}.${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">collecto</trigger><description>collect element do</description><template>begin
+	${statement}
+rescue ${Exception} =&gt; ${e}
+	${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">def</trigger><description>Method Definition</description><template>def ${method_name}
+	${body}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">if</trigger><description>if...end</description><template>if ${condition}
+	${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">collect</trigger><description>collect element</description><template>collect { |${element}| ${element}.${object} }${cursor}</template></entry><entry><trigger id="Ruby">doo</trigger><description>do |object|...end</description><template>do |${object}|
+	${statement}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">eacho</trigger><description>each element do</description><template>each do |${element}|
+	${element}.${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">eachwio</trigger><description>each with index do</description><template>each_with_index do |${element}, ${idx}|
+	${element}.${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">injecto</trigger><description>inject object do</description><template>inject(${object}) do |${injection}, ${element}| 
+	${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">begin</trigger><description>begin...rescue...end</description><template>begin
+	${}
+rescue ${Exception} =&gt; ${e}
+	${}
+end
+${cursor}</template></entry><entry><trigger id="Ruby">selecto</trigger><description>select element do</description><template>select do |${element}|
+	${element}.${}
+end
+${cursor}</template></entry></snippet>

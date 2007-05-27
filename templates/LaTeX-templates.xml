@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippet><entry><trigger id="LaTeX">\</trigger><description>Generic Command</description><template>\${command}</template></entry><entry><trigger id="LaTeX">author</trigger><description>Author Command</description><template>\author{${Author Name}}${cursor}</template></entry><entry><trigger id="LaTeX">date</trigger><description>Date Command</description><template>\date{\today}${cursor}</template></entry><entry><trigger id="LaTeX">doc</trigger><description>Document Template</description><template>\begin{document}
+${cursor}
+\end{document}</template></entry><entry><trigger id="LaTeX">math</trigger><description>Display Math</description><template>\\[
+	${cursor}
+]</template></entry><entry><trigger id="LaTeX">\p</trigger><description>Generic Command Parameter</description><template>\${command}{${arguments}}${cursor}</template></entry><entry><trigger id="LaTeX">par</trigger><description>Paragraph Command</description><template>\paragraph{${Paragraph Title}}${cursor}</template></entry><entry><trigger id="LaTeX">sec</trigger><description>Section Command</description><template>\section{${Section Title}}${cursor}</template></entry><entry><trigger id="LaTeX">title</trigger><description>Title Command</description><template>\title{${Title Name}}${cursor}</template></entry></snippet>

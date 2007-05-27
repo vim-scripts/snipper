@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippet><entry><trigger id="PHP">php</trigger><description>Start new page</description><template>&lt;?php
+${code}
+
+?&gt;</template></entry><entry><trigger id="PHP">req</trigger><description>Require</description><template>require( '${file}' );</template></entry><entry><trigger id="PHP">cmt</trigger><description>Comment - Standard</description><template>// ${comment}</template></entry><entry><trigger id="PHP">td</trigger><description>TODO</description><template>//TODO: ${task}</template></entry><entry><trigger id="PHP">arr</trigger><description>Array</description><template>array( ${arg} =&gt; ${arg2}${cursor} );</template></entry><entry><trigger id="PHP">arr2</trigger><description>Add more to an array</description><template>, ${arg1} =&gt; ${arg2}</template></entry><entry><trigger id="PHP">req1</trigger><description>Require Once</description><template>require_once( '${file}' );</template></entry><entry><trigger id="PHP">cmt1</trigger><description>Comment - label</description><template>//+--------------------------------------
+//+ ${comment}
+//+--------------------------------------
+${cursor}</template></entry><entry><trigger id="PHP">fix</trigger><description>FIXME</description><template>//FIXME: ${bug}</template></entry><entry><trigger id="PHP">func</trigger><description>New Function</description><template>function ${name}(${vars})
+{
+		${code}
+}
+${cursor}</template></entry><entry><trigger id="PHP">foreach</trigger><description>Foreach statement</description><template>foreach ( ${arg1} as ${arg2} )
+{
+		${code}
+}
+${cursor}</template></entry><entry><trigger id="PHP">new</trigger><description>New Class Object</description><template>$${obj} = new ${class}(${args});</template></entry><entry><trigger id="PHP">else</trigger><description>If - else</description><template>else
+{
+		${code}
+}
+${cursor}</template></entry><entry><trigger id="PHP">switch</trigger><description>Switch Statement</description><template>switch(${var})
+{
+		case &quot;${case1}&quot;:
+				${code}
+		break;
+
+		${extracase?}
+
+		${default:}
+}
+${cursor}
+</template></entry><entry><trigger id="PHP">case</trigger><description>Switch Statement - case item</description><template>case '${var}':
+		${code}
+break;
+${cursor}</template></entry><entry><trigger id="PHP">ech</trigger><description>Echo</description><template>echo ${echo_what};${cursor}</template></entry><entry><trigger id="PHP">cls</trigger><description>Class</description><template>class ${class_name}
+{
+		${code}
+}
+${cursor}</template></entry><entry><trigger id="PHP">inc</trigger><description>Include</description><template>include( '${file}' );</template></entry><entry><trigger id="PHP">ret</trigger><description>Return $var</description><template>return ${var};${cursor}</template></entry><entry><trigger id="PHP">if</trigger><description>If - standard</description><template>if ( ${var} )
+{
+		${code}
+} ${cursor}</template></entry><entry><trigger id="PHP">inc1</trigger><description>Include Once</description><template>include_once( '${file}' );</template></entry><entry><trigger id="PHP">eq</trigger><description>Equals Statement</description><template>${arg1} == ${arg2}</template></entry><entry><trigger id="PHP">elseif</trigger><description>If - elseif</description><template>elseif
+{
+		${code}
+} ${cursor}</template></entry><entry><trigger id="PHP">while</trigger><description>While statement</description><template>while (${var})
+{
+		${code}
+}
+${cursor}</template></entry></snippet>

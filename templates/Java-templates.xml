@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippet><entry><trigger id="Java">@author</trigger><description>Javadoc author tag</description><template>@author ${user}</template></entry><entry><trigger id="Java">&lt;b&gt;</trigger><description>Javadoc bold tag</description><template>&lt;b&gt;${word_selection}&lt;/b&gt;${cursor}</template></entry><entry><trigger id="Java">cast</trigger><description>Dynamic cast</description><template>${type} ${new_name} = (${type}) ${name};</template></entry><entry><trigger id="Java">catch</trigger><description>Catch block</description><template>catch (${Exception} e) {
+	${cursor}// ${todo}: handle exception
+}</template></entry><entry><trigger id="Java">&lt;code&gt;</trigger><description>Javadoc code tag</description><template>&lt;code&gt;${word_selection}&lt;/code&gt;${cursor}</template></entry><entry><trigger id="Java">do</trigger><description>Do while statement</description><template>do {
+	${line_selection}${cursor}
+} while (${condition});</template></entry><entry><trigger id="Java">else</trigger><description>Else block</description><template>else {
+	${cursor}
+}</template></entry><entry><trigger id="Java">elseif</trigger><description>Else if block</description><template>else if (${condition}) {
+	${cursor}
+}</template></entry><entry><trigger id="Java">false</trigger><description>Javadoc false tag</description><template>&lt;code&gt;false&lt;/code&gt;</template></entry><entry><trigger id="Java">for</trigger><description>Iterate over array</description><template>for (int ${index} = 0; ${index} &lt; ${array}.length; ${index}++) {
+	${line_selection}${cursor}
+}</template></entry><entry><trigger id="Java">for1</trigger><description>Iterate over array with temp variable</description><template>for (int ${index} = 0; ${index} &lt; ${array}.length; ${index}++) {
+	${array_type} ${array_element} = ${array}[${index}];
+	${cursor}
+}</template></entry><entry><trigger id="Java">for2</trigger><description>Iterate over collection</description><template>for (Iterator ${iterator} = ${collection}.iterator(); ${iterator}.hasNext(); ) {
+	${type} ${element} = (${type}) ${iterator}.next();
+	${cursor}
+}</template></entry><entry><trigger id="Java">foreach</trigger><description>Iterate over arrary or iteratable</description><template>for (${iterable_type} ${iterable_element} : ${iterable}) {
+	${cursor}
+}</template></entry><entry><trigger id="Java">&lt;i&gt;</trigger><description>Javadoc  italic tag</description><template>&lt;i&gt;${word_selection}&lt;/i&gt;${cursor}</template></entry><entry><trigger id="Java">if</trigger><description>If statement</description><template>if (${condition}) {
+	${line_selection}${cursor}
+}</template></entry><entry><trigger id="Java">ifelse</trigger><description>If else statement</description><template>if (${condition}) {
+	${cursor}
+} else {
+	
+}</template></entry><entry><trigger id="Java">instanceof</trigger><description>dynamic type test and cast</description><template>if (${name} instanceof ${type}) {
+	${type} ${new_name} = (${type})${name};
+	${cursor}
+}</template></entry><entry><trigger id="Java">lazy</trigger><description>Lazy creation</description><template>if (${name} == null) {
+	${name} = new ${type}(${arguments});
+	${cursor}
+}
+
+return ${name};</template></entry><entry><trigger id="Java">main</trigger><description>Main method</description><template>public static void main(String[] args) {
+	${cursor}
+}</template></entry><entry><trigger id="Java">new</trigger><description>create new object</description><template>${type} ${name} = new ${type}(${arguments});</template></entry><entry><trigger id="Java">null</trigger><description>Javadoc null tag</description><template>&lt;code&gt;null&lt;/code&gt;</template></entry><entry><trigger id="Java">&lt;pre&gt;</trigger><description>Javadoc pre tag</description><template>&lt;pre&gt;${word_selection}&lt;/pre&gt;${cursor}</template></entry><entry><trigger id="Java">privmethod</trigger><description>Private method</description><template>private ${return_type} ${name}(${}) {
+	${cursor}
+}</template></entry><entry><trigger id="Java">privstatmethod</trigger><description>Private static method</description><template>private static ${return_type} ${name}(${}) {
+	${cursor}
+}</template></entry><entry><trigger id="Java">protmethod</trigger><description>Protected method</description><template>protected ${return_type} ${name}(${}) {
+	${cursor}
+}</template></entry><entry><trigger id="Java">pubmethod</trigger><description>Public method</description><template>public ${return_type} ${name}(${}) {
+	${cursor}
+}</template></entry><entry><trigger id="Java">runnable</trigger><description>Runnable</description><template>new Runnable() {
+	public void run() {
+		${line_selection}
+	}
+}</template></entry><entry><trigger id="Java">switch</trigger><description>Switch case statement</description><template>switch (${key}) {
+	case ${value}:
+		${cursor}
+		break;
+
+	default:
+		break;
+}</template></entry><entry><trigger id="Java">synchronized</trigger><description>synchronized block</description><template>synchronized (${mutex}) {
+	${line_selection}
+}</template></entry><entry><trigger id="Java">syserr</trigger><description>Print to standard error</description><template>System.err.println(${word_selection});${cursor}</template></entry><entry><trigger id="Java">sysout</trigger><description>Print to standard out</description><template>System.out.println(${word_selection});${cursor}</template></entry><entry><trigger id="Java">systrace</trigger><description>Print current method to standard out</description><template>System.out.println(&quot;${enclosing_type}.${enclosing_method}()&quot;);</template></entry><entry><trigger id="Java">test</trigger><description>Test method</description><template>public void test${name}() throws Exception {
+	${cursor} 
+}</template></entry><entry><trigger id="Java">toarray</trigger><description>Convert collection to array</description><template>(${type}[]) ${collection}.toArray(new ${type}[${collection}.size()])</template></entry><entry><trigger id="Java">true</trigger><description>Javadoc true tag</description><template>&lt;code&gt;true&lt;/code&gt;</template></entry><entry><trigger id="Java">try</trigger><description>Try catch block</description><template>try {
+	${line_selection}${cursor}
+} catch (${Exception} e) {
+	// ${todo}: handle exception
+}</template></entry><entry><trigger id="Java">while</trigger><description>iterate with enumeration</description><template>while (${enumeration}.hasMoreElements()) {
+	${type} ${element} = (${type}) ${enumeration}.nextElement();
+	${cursor}
+}</template></entry><entry><trigger id="Java">while1</trigger><description>Iterate with iterator</description><template>while (${iterator}.hasNext()) {
+	${type} ${element} = (${type}) ${iterator}.next();
+	${cursor}
+}</template></entry><entry><trigger id="Java">while2</trigger><description>While loop with condition</description><template>while (${condition}) {
+	${line_selection}${cursor}
+}</template></entry></snippet>

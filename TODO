@@ -1,0 +1,6 @@
+function to list all current templates
+function to list all available templates for all files
+first tab should not be needed after inserting template
+update all placeholders with same name
+predefined placeholders like date, cursor, selectected
+text....see: http://macromates.com/textmate/manual/snippets

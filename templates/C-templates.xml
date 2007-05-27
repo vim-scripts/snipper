@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippet><entry><trigger id="C">array</trigger><description>Array Definition</description><template>${type} ${name}[${size}] = ${value};</template></entry><entry><trigger id="C">cmt</trigger><description>C Comment</description><template>/* ${comment} */${cursor}</template></entry><entry><trigger id="C">def</trigger><description>Preprocessor Statement</description><template>#define ${CONSTANT} (${SUBSTITUTE})${cursor}</template></entry><entry><trigger id="C">for</trigger><description>For Statement</description><template>for (${initial_statement}; ${condition}; ${iteration_statement}) {
+	${cursor};
+}
+</template></entry><entry><trigger id="C">func</trigger><description>Function Definition</description><template>${type} ${func_name}(${parameters}) {
+
+	${cursor}
+
+}</template></entry><entry><trigger id="C">if</trigger><description>If Condition</description><template>if (${condition}) {
+	${cursor}
+}</template></entry><entry><trigger id="C">incl</trigger><description>Include Preprocessor Statement</description><template>#include &lt;${cursor}&gt;</template></entry><entry><trigger id="C">main</trigger><description>Main Function (void)</description><template>int main(void) {
+	
+	${cursor}
+	
+	return (0);
+}</template></entry><entry><trigger id="C">mainp</trigger><description>Main Function</description><template>int main(int argc, char **argv) {
+	
+	${cursor}
+	
+	return (0);
+}</template></entry><entry><trigger id="C">mlc</trigger><description>Malloc Function</description><template>malloc(sizeof(${object}));</template></entry><entry><trigger id="C">nl</trigger><description>NULL</description><template>NULL</template></entry><entry><trigger id="C">nul</trigger><description>Nul Character</description><template>'\0'</template></entry><entry><trigger id="C">prt</trigger><description>Print Statement</description><template>printf(${value});${cursor}</template></entry><entry><trigger id="C">ret</trigger><description>Return Statement</description><template>return (${value});${cursor}</template></entry><entry><trigger id="C">struct</trigger><description>Structure Definition</description><template>struct ${structure_name} {
+	${cursor}
+} ${variable_name};</template></entry><entry><trigger id="C">vdec</trigger><description>Variable Declaration</description><template>${type} ${name};${cursor}</template></entry><entry><trigger id="C">vdef</trigger><description>Variable Definition</description><template>${name} = ${value};${cursor}</template></entry><entry><trigger id="C">while</trigger><description>While Loop Construct</description><template>while (${condition}){
+	${cursor}
+}</template></entry></snippet>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippet><entry><trigger id="GtkRC">bg</trigger><description>Background Color Themes</description><template>bg[NORMAL] 		= &quot;#${value1}&quot;
+bg[ACTIVE] 		= &quot;#${value2}&quot;
+bg[PRELIGHT] 	= &quot;#${value3}&quot;
+bg[SELECTED]	= &quot;#${value4}&quot;
+bg[INSENSITIVE]	= &quot;#${value5}&quot;
+${cursor}</template></entry><entry><trigger id="GtkRC">bs</trigger><description>Base Colors</description><template>base[NORMAL] 		= &quot;#${value1}&quot;
+base[ACTIVE] 		= &quot;#${value2}&quot;
+base[PRELIGHT] 		= &quot;#${value3}&quot;
+base[SELECTED]		= &quot;#${value4}&quot;
+base[INSENSITIVE]	= &quot;#${value5}&quot;
+${cursor}</template></entry><entry><trigger id="GtkRC">cls</trigger><description>Class Statement</description><template>class &quot;${class_type}&quot; style &quot;${theme_style}&quot;</template></entry><entry><trigger id="GtkRC">fg</trigger><description>Foreground Theme Colors</description><template>fg[NORMAL] 		= &quot;#${value1}&quot;
+fg[ACTIVE] 		= &quot;#${value2}&quot;
+fg[PRELIGHT] 	= &quot;#${value3}&quot;
+fg[SELECTED]	= &quot;#${value4}&quot;
+fg[INSENSITIVE]	= &quot;#${value5}&quot;
+${cursor}</template></entry><entry><trigger id="GtkRC">style</trigger><description>Style Clause</description><template>style &quot;${style_name}&quot;
+{
+	${body}
+}
+${cursor}</template></entry><entry><trigger id="GtkRC">txt</trigger><description>Text Color</description><template>text[NORMAL] 		= &quot;#${value1}&quot;
+text[ACTIVE] 		= &quot;#${value2}&quot;
+text[PRELIGHT] 		= &quot;#${value3}&quot;
+text[SELECTED]		= &quot;#${value4}&quot;
+text[INSENSITIVE]	= &quot;#${value5}&quot;
+${cursor}</template></entry><entry><trigger id="GtkRC">wcls</trigger><description>Widget Class Definition</description><template>widget_class &quot;${class_type}&quot; style &quot;${style_name}&quot;</template></entry></snippet>

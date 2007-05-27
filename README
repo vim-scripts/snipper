@@ -1,0 +1,8 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1908
+
+see https://launchpad.net/snipper/ and http://tmske.blogspot.com/
+you need vim with python enabled for this script
+for the most recent package at all times you beter use the code of https://launchpad.net/snipper/
+There are some templates in the package (python, c, xml, ...)
+
+See http://snipper.googlecode.com/files/snipper-0.1-example.ogg for a small screencast of how snipper works
