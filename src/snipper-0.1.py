@@ -32,7 +32,10 @@ class Templates(object):
     self.templateMode = False
     self.template_folder = os.path.expanduser("~/.vim/templates")   
     self.cursor = "${cursor}"
-    self.pattern = re.compile(r'\${[\w| _.-]*}')
+    self.strPat = r'\${[\w| _.-]*}'
+    self.vimPat = r'${[a-zA-Z_.-]*}'
+    self.pattern = re.compile(self.strPat)
+    self._highlightPattern(self.vimPat)
     self.init()
       
   def init(self):
@@ -43,6 +46,10 @@ class Templates(object):
       self.templates = self.readTemplate(self.file)
   
   
+  def _highlightPattern(self, pattern):
+    com = "match Visual /" + pattern + "/"
+    vim.command(com)
+
   def _readFiles(self):
     """read all the template files"""
     template_files = []
@@ -115,8 +122,6 @@ class Templates(object):
     tabno = self.helper.tabno
     row, col = vim.current.window.cursor
     line = vim.current.line
-    vim.current.buffer[0] = str(col)
-    vim.current.buffer[1] = str(len(line))
     if len(line) == col + 1:
       #if cursor is at the end of the line, don't take the last char
       vim.current.line = line[0:col+1] + tab + line[col+1:]

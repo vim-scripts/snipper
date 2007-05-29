@@ -2,24 +2,21 @@
 
 = Installation =
 
- * Unpack snipper-0.1.tar.gz to some dir
- * link .vim/templates to /path/to/snipper/templates
-The script will search for files that contain the filetype and are xml files.
-   So if you have templates for python, you could name them python-templates.xml and    place that file in ~/.vim/templates
-   If you have scribes installed you can also use those and link to ~/.vim/templates/ to ~/.scribes/templates
 
- * You need vim with python enabled to use this script
+ * You need vim with python enabled to use this script (python 2.4 should be enough)
+ * Unpack snipper-0.2.tar.gz to some dir (for example ~/bin/snipper)
+ * link ~/.vim/snipper to ~/bin/snipper:
+ ln -s ~/bin/snipper ~/.vim/snipper
+ * add this to your ~/.vimrc:
+ autocmd VimEnter * source ~/.vim/snipper/snipper.vim
 
-
-To let the script work place these lines in your .vimrc:
- * link snipper to ~/.vim/scripts/snipper
- and place this in your .vimrc
- pyfile ~/.vim/scripts/snipper (or the place where you have downloaded snipper)
-imap <tab> <C-o>:python template.trigger()<CR>
-autocmd BufRead * python template.reInit()
-autocmd BufNewFile * python template.reInit()
+If you want to change the keybindings for snipper change them in ~/.vim/snipper/snipper.vim
 
 = Use =
 enter a defined template and press tab
+check the small introduction video (2mb): http://snipper.googlecode.com/files/snipper-0.1-example.ogg
+check my blog http://tmske.blogspot.com/
+and the project home page: https://launchpad.net/snipper/
+
 _more information will folow_
 
